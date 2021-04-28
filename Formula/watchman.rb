@@ -6,14 +6,8 @@ class Watchman < Formula
   head "https://github.com/facebook/watchman.git"
 
   stable do
-    url "https://github.com/facebook/watchman/archive/v4.9.0.tar.gz"
+    url "https://github.com/facebook/watchman/releases/download/v2021.04.26.00/watchman-v2021.04.26.00-macos.zip"
     sha256 "1f6402dc70b1d056fffc3748f2fdcecff730d8843bb6936de395b3443ce05322"
-
-    # Upstream commit from 1 Sep 2017: "Have bin scripts use iter() method for python3"
-    patch do
-      url "https://github.com/facebook/watchman/commit/17958f7d.patch?full_index=1"
-      sha256 "73990f0c7bd434d04fd5f1310b97c5f8599793007bd31ae438c2ba0211fb2c43"
-    end
   end
 
   # The Git repo contains a few tags like `2020.05.18.00`, so we have to
